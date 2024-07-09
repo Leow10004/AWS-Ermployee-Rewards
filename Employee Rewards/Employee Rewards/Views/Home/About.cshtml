@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "About Page";
+    Layout = "_Unlocked";
+}
+
+<link rel="stylesheet" href="~/css/Home/Index.css" />
+<link rel="stylesheet" href="~/css/Home/About.css" />
+
+<div class="about-container">
+    <div class="about-header">About AWS Employee Rewards</div>
+    <div class="about-info">
+        <h2>Our Mission</h2>
+        <p>
+            At AWS Employee Rewards, we believe that recognizing and rewarding employees for their hard work and dedication is essential for fostering a positive and productive work environment.
+            Our platform provides an easy and effective way to celebrate achievements, motivate teams, and enhance employee satisfaction.
+        </p>
+
+        <h2>What We Offer</h2>
+        <p>
+            Our comprehensive rewards system allows managers and peers to acknowledge outstanding performance, milestones, and contributions.
+            We offer a variety of rewards, from gift cards to exclusive experiences, ensuring there's something for everyone.
+        </p>
+
+        <h2>Join Us</h2>
+        <p>
+            Become a part of our mission to create happier workplaces. Explore our platform and see how AWS Employee Rewards can transform your company's culture.
+        </p>
+
+        <a asp-controller="Login" asp-action="Login" class="about-button">Get Started</a>
+    </div>
+</div>

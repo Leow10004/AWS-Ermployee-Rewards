@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Employee_Rewards</title>
+    <link rel="stylesheet" href="~/css/Login/_Locked.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Employee_Rewards.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="side-nav">
+        <p class="logo">AWS</p>
+
+        <div class="account-container">
+            <a asp-controller="Login" asp-action="Login" class="account login">Login</a>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="top-nav">
+            <a asp-controller="Login" asp-action="Index" class="top-nav-button Home">Home</a>
+            <a asp-controller="Login" asp-action="Contact" class="top-nav-button Contact">Contact</a>
+            <a asp-controller="Login" asp-action="About" class="top-nav-button About">About</a>
+        </div>
+        <div class="content">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

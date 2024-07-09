@@ -1,0 +1,108 @@
+/* _content/Employee Rewards/Views/Shared/_Locked.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body[b-3wanl4xwhg] {
+    height: 100vh;
+    width: 100vw;
+}
+
+a.navbar-brand[b-3wanl4xwhg] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-3wanl4xwhg] {
+  color: #0077cc;
+}
+
+.btn-primary[b-3wanl4xwhg] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-3wanl4xwhg], .nav-pills .show > .nav-link[b-3wanl4xwhg] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-3wanl4xwhg] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-3wanl4xwhg] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-3wanl4xwhg] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-3wanl4xwhg] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-3wanl4xwhg] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Employee Rewards/Views/Shared/_Unlocked.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body[b-p1ucxnqlh5] {
+    height: 100vh;
+    width: 100vw;
+}
+
+a.navbar-brand[b-p1ucxnqlh5] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-p1ucxnqlh5] {
+  color: #0077cc;
+}
+
+.btn-primary[b-p1ucxnqlh5] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-p1ucxnqlh5], .nav-pills .show > .nav-link[b-p1ucxnqlh5] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-p1ucxnqlh5] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-p1ucxnqlh5] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-p1ucxnqlh5] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-p1ucxnqlh5] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-p1ucxnqlh5] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

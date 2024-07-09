@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Employee_Rewards</title>
+    <link rel="stylesheet" href="~/css/Home/_Unlocked.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Employee_Rewards.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="side-nav">
+        <p class="logo">AWS</p>
+
+        <a class="nav-button"><img src="/images/icons/Employee.png" data-original="/images/icons/Employee.png" data-hover="/images/icons/Employee-Active.png" /><span>Employees</span></a>
+        <a class="nav-button"><img src="/images/icons/Manager.png" data-original="/images/icons/Manager.png" data-hover="/images/icons/Manager-Active.png" /><span>Managers</span></a>
+        <a class="nav-button"><img src="/images/icons/Admin.png" data-original="/images/icons/Admin.png" data-hover="/images/icons/Admin-Active.png" /><span>Admins</span></a>
+        <a class="nav-button"><img src="/images/icons/Reward.png" data-original="/images/icons/Reward.png" data-hover="/images/icons/Reward-Active.png" /><span>Rewards</span></a>
+        <a class="nav-button"><img src="/images/icons/Statistics.png" data-original="/images/icons/Statistics.png" data-hover="/images/icons/Statistics-Active.png" /><span>Statistics</span></a>
+        @if (ViewBag.AccessLevel == 3){
+            <a class="nav-button"><img src="/images/icons/Database.png" data-original="/images/icons/Database.png" data-hover="/images/icons/Database-Active.png" /><span>Database</span></a>
+        }
+
+        <div class="account-container">
+            <p class="account">@ViewBag.Initials : @ViewBag.UserID</p>
+            <a asp-controller="Profile" asp-action="Index" class="account profile">Profile</a>
+            <a class="account notifications">Notifications</a>
+            <a asp-controller="Home" asp-action="Logout" class="account logout">Logout</a>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="top-nav">
+            <a asp-controller="Home" asp-action="Index" class="top-nav-button Home">Home</a>
+            <a asp-controller="Home" asp-action="Contact" class="top-nav-button Contact">Contact</a>
+            <a asp-controller="Home" asp-action="About" class="top-nav-button About">About</a>
+        </div>
+        <div class="content">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

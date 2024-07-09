@@ -1,0 +1,31 @@
+﻿body {
+}
+
+.jumbotron {
+    background: url('~/images/jumbotron-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 25px;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .btn-primary {
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: #ff9900;
+    border: none;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #e68a00;
+}

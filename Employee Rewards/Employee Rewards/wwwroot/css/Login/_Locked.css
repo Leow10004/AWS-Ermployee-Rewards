@@ -1,0 +1,104 @@
+﻿body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.side-nav {
+    background: #26292B;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 100px 0;
+    color: #FF9900;
+    font-size: 46px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    letter-spacing: 5px;
+}
+
+.account-container {
+    margin-top: auto;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-top: solid 1px black;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.login:hover {
+    color: #FF9900;
+}
+
+.account-active {
+    color: #FF9900;
+}
+
+.main-page {
+    background: #575E63;
+    width: 100%;
+    height: 100%;
+}
+
+.top-nav {
+    background: #323639;
+    width: 100%;
+    height: 8%;
+    align-content: center;
+}
+
+.top-nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 0 100px;
+}
+
+.top-nav-button:hover {
+    color: #FF9900;
+}
+
+.top-nav-active {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 36px;
+}
+
+.content {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+/* Media query for responsive design */
+@media (max-width: 1700px) {
+    .account {
+        font-size: 20px !important;
+    }
+
+    .logo {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MyProject.Models.Password>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Locked";
+}
+
+<link rel="stylesheet" href="~/css/Login/Index.css" />
+
+<style>
+    .Home {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 1px;
+        font-size: 36px;
+    }
+</style>
+
+<div class="jumbotron">
+    <h1>Welcome to AWS Employee Rewards</h1>
+    <p>Recognise and reward your employees for their hard work and dedication.</p>
+    <a asp-controller="Login" asp-action="Login" class="btn btn-primary">Get Started</a>
+</div>
